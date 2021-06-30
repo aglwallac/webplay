@@ -1,5 +1,5 @@
 const SAUCE_LABS_USERNAME = 'gaiamtesting'
-const SAUCE_LABS_ACCESSKEY = '096805c6-1157-4108-b8f7-c61be260d563'
+const SAUCE_LABS_ACCESSKEY = '09660d563'
 const CONFIG = {
   timeout: 180000,
   protocol: 'https://',
