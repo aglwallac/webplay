@@ -1,17 +1,14 @@
-
-  {
-    "name": "web-app",
-    "description": " Web Play App",
-    "version": "1.200.0",
-    "private": true,
-    "main": "server.js",
-    "license": "UNLICENSED",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/aglwallac/webplay.gitp"
-    },
-
-
+{
+  "name": "web-app",
+  "description": " Web Play App",
+  "version": "1.200.0",
+  "private": true,
+  "main": "server.js",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aglwallac/webplay.gitp"
+  },
   "scripts": {
     "build": "npm run init-react-loadable; gulp; webpack --colors --mode=production",
     "build2": "npm run init-react-loadable; gulp",
@@ -151,7 +148,7 @@
     "chromedriver": "90.0.0",
     "css-loader": "5.2.4",
     "cssnano": "5.0.2",
-    "cucumber": "4.2.2",
+    "@cucumber/cucumber": "7.1.0",
     "del": "2.2.2",
     "enzyme": "3.10.0",
     "enzyme-adapter-react-16": "1.14.0",
