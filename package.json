@@ -151,7 +151,7 @@
     "chromedriver": "90.0.0",
     "css-loader": "5.2.4",
     "cssnano": "5.0.2",
-    "cucumber": "https://github.com/wonderbill/cucumber-js.git#feature/issue-727-retry",
+    "cucumber": "4.2.2",
     "del": "2.2.2",
     "enzyme": "3.10.0",
     "enzyme-adapter-react-16": "1.14.0",
