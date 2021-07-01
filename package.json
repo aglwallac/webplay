@@ -1,14 +1,17 @@
-{
-  "name": "web-play",
-  "description": "WebPlay,
-  "version": "1.200.0",
-  "private": true,
-  "main": "server.js",
-  "license": "Restricted Use",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/aglwallac/webplay.git"
-  },
+
+  {
+    "name": "web-app",
+    "description": " Web Play App",
+    "version": "1.200.0",
+    "private": true,
+    "main": "server.js",
+    "license": "UNLICENSED",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/aglwallac/webplay.gitp"
+    },
+
+
   "scripts": {
     "build": "npm run init-react-loadable; gulp; webpack --colors --mode=production",
     "build2": "npm run init-react-loadable; gulp",
