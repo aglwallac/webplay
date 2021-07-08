@@ -1,8 +1,0 @@
-{
-  "displayText" : "sur ${ pages }",
-  "assistiveText" : "Page ${ p } sur ${ pages }",
-  "ariaPrev" : "Voir la page ${ prevPage }",
-  "ariaNext" : "Voir la page ${ nextPage }",
-  "inputLabel" : "Saisir une nouvelle page",
-  "inputInvalidPageNumber" : "Numéro de page non valide"
-}
