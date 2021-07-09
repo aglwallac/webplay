@@ -10,7 +10,9 @@
     "url": "https://github.com/aglwallac/webplay.gitp"
   },
   "scripts": {
-    "build": "mkdir -p tap; NODE_ENV=production ;NODE_PATH=./node_modules/:./lib/:./lib/web-app/; npm run init-react-loadable.json;echo ' ------------ GULP -------------- '; gulp; echo '------------ WEBPACK START -------------'; webpack --colors --mode=production; echo ' --------- WEBPACK FINSISHED ----------'; /bin/ls -lFa . ./dist ./dist/server/*",
+    "a_build": "mkdir -p tap; NODE_ENV=production ;NODE_PATH=./node_modules/:./lib/:./lib/web-app/; npm run init-react-loadable.json;echo ' ------------ GULP -------------- '; gulp; echo '------------ WEBPACK START -------------'; webpack --colors --mode=production; echo ' --------- WEBPACK FINSISHED ----------'; /bin/ls -lFa . ./dist ./dist/server/*",
+    "VERIFIED_AS_GOOD___build": "mkdir -p tap; NODE_ENV=production ;NODE_PATH=./node_modules/:./lib/:./lib/web-app/; npm run init-react-loadable.json;echo ' ------------ GULP -------------- '; gulp; echo '------------ WEBPACK START -------------'; webpack --colors --mode=production; echo ' --------- WEBPACK FINSISHED ----------'; /bin/ls -lFa . ./dist ./dist/server/*",
+    "build": "npm run build_prep; npm run build_install;npm run lint-tap > tap/lint.tap;npm run test-tap > tap/test.tap;npm run build_all",
     "new_build": "npm run build_prep; npm run build_install;npm run lint-tap > tap/lint.tap;npm run test-tap > tap/test.tap;npm run build_all",
     "build_all": "npm run build_gulp;  npm run build_package ",
     "build_prep": "mkdir -p tap; echo ' ------------ SETUP DONE  NOW BUILD ----------------'",
