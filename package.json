@@ -10,7 +10,7 @@
     "url": "https://github.com/aglwallac/webplay.gitp"
   },
   "scripts": {
-    "build": "mkdir -p tap; NODE_ENV=production ;NODE_PATH=./node_modules/:./lib/:./lib/web-app/; set +x; echo ' ------------ SETUP DONE  NOW BUILD ----------------'; npm run init-react-loadable.json;npm install --global gulp-cli;echo ' ------------ INSTALL DONE - - GULP -------------- '; gulp; webpack --colors --mode=production; echo ' --------- WEBPACK FINSISHED ----------'; /bin/ls -lFa . ./dist ./dist/server/*",
+    "build": "set +x; mkdir -p tap; NODE_ENV=production ;NODE_PATH=./node_modules/:./lib/:./lib/web-app/;echo ' ------------ SETUP DONE  NOW BUILD ----------------'; npm run init-react-loadable.json;npm install --global gulp-cli;echo ' ------------ INSTALL DONE - - GULP -------------- '; gulp; echo '------------ WEBPACK START -------------------'; webpack --colors --mode=production; echo ' --------- WEBPACK FINSISHED ----------'; /bin/ls -lFa . ./dist ./dist/server/*",
     "build_good": "npm run init-react-loadable; gulp; webpack --colors --mode=production",
     "build2": "npm run init-react-loadable; gulp",
     "build-webpack": "webpack --colors --mode=production",
