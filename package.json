@@ -14,7 +14,7 @@
     "build_good": "npm run init-react-loadable; gulp; webpack --colors --mode=production",
     "build2": "npm run init-react-loadable; gulp",
     "build-webpack": "webpack --colors --mode=production",
-    "start": "set +x;echo `pwd`; /bin/ls -lFa;echo ' ---------- BEFORE --------- '; cp -r dist/server/* .; cp -r dist/browser/* .;node browser.js",
+    "start": "set +x;echo `pwd`; /bin/ls -lFa;echo ' ---------- BEFORE --------- '; cp -r dist/server/* .; cp -r dist/browser/* .;node server.js",
     "start_good": "mkdir /usr/src/app; cp -R ./dist/server/* .; cp . usr/src/app; cd /usr/src/app; /bin/ls -lFa; node .",
     "startup": "npm run init-react-loadable; pm2 flush; NODE_PORT=8088 pm2 start process.yml",
     "code-coverage": "NODE_CONFIG_ENV='test' nyc npm run test-tap > /dev/null",
