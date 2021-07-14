@@ -1,0 +1,50 @@
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: build.openshift.io/v1
+kind: BuildConfig
+metadata:
+  labels:
+    app: i-webplay
+    app.kubernetes.io/component: i-webplay
+    app.kubernetes.io/instance: i-webplay
+    app.kubernetes.io/name: nodejs
+  name: i-webplay
+  namespace: apattest
+spec:
+  failedBuildsHistoryLimit: 5
+  nodeSelector: null
+  output:
+    to:
+      kind: ImageStreamTag
+      name: i-webplay:latest
+  postCommit: {}
+  resources: {}
+  runPolicy: Serial
+  source:
+    git:
+      uri: https://github.com/iglwallac/i-webplay.git
+    sourceSecret:
+      name: newpat
+    type: Git
+  strategy:
+    sourceStrategy:
+      from:
+        kind: ImageStreamTag
+        name: nodejs:14-ubi8
+        namespace: openshift
+    type: Source
+  successfulBuildsHistoryLimit: 5
+  triggers:
+  - github:
+      secret: pbvlkqfZ52DiH7ul6NRE
+    type: GitHub
+  - generic:
+      secret: nb8ixMYmrjMi64G6sX_e
+    type: Generic
+  - type: ConfigChange
+  - imageChange:
+      lastTriggeredImageID: image-registry.openshift-image-registry.svc:5000/openshift/nodejs@sha256:f336fb575a79f901428682fa14fdb47d2f94377ba8a59de3003b2ef0d90f22f8
+    type: ImageChange
+
