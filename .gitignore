@@ -67,3 +67,6 @@ terraform/.terraform
 
 package-lock.json
 .prettierrc.json
+
+.odo/env
+.odo/odo-file-index.json

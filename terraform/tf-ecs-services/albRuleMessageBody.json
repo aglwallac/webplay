@@ -1,7 +1,0 @@
-{
-  "errors": [{
-    "title": "Unauthorized",
-    "detail": "Missing CloudFront authorization header",
-    "status": 401
-  }]
-}
