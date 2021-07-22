@@ -70,3 +70,4 @@ package-lock.json
 
 .odo/env
 .odo/odo-file-index.json
+push-log.md
